@@ -21,7 +21,7 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.AB, function () {
     music.setVolume(255)
-    music.playMelody("C - C - C - C - ", 140)
+    music.playMelody("C - C - C - C - ", 120)
     OLED.writeStringNewLine("System Checking,For your Safety Please Seat Belt Fasten")
     basic.pause(5000)
     OLED.clear()
@@ -40,7 +40,7 @@ OLED.init(128, 128)
 basic.forever(function () {
     if (Distance > 70) {
         music.setVolume(255)
-        music.playMelody("C5 C5 C5 C5 C5 C5 C5 C5 ", 500)
+        music.playMelody("C5 C5 C5 C5 C5 C5 C5 C5 ", 40)
         pins.digitalWritePin(DigitalPin.P1, 1)
         OLED.writeStringNewLine("Ryujunhyuk")
         basic.pause(5000)
@@ -50,7 +50,7 @@ basic.forever(function () {
     } else if (Distance < 50) {
         music.setVolume(255)
         music.playMelody("G E C - G B C5 - ", 250)
-        OLED.writeStringNewLine("Welcome,Gyeonggi 71 Ba 4244")
+        OLED.writeStringNewLine("Welcome,Gyeonggi 71 Ba 4344")
         basic.pause(5000)
         OLED.clear()
         basic.pause(60000)
